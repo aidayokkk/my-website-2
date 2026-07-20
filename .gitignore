@@ -1,0 +1,12 @@
+# 外部パッケージ（容量が大きいためGitHubにあげない）
+node_modules/
+
+# ビルド成果物（npm run build等で自動生成されるフォルダ）
+dist/
+
+# OS固有の不要ファイル
+.DS_Store
+Thumbs.db
+
+# ログファイル
+*.log
