@@ -11,7 +11,7 @@ export default defineConfig({
       input: {
   
         app: resolve(import.meta.dirname, 'app.html'),
-      },
+      }
     },
   },
 
