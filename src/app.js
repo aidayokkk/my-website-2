@@ -1,4 +1,3 @@
-import './styles.css'; 
 import mixitup from 'mixitup';
 
 const containerEl = document.querySelector('.mix-container');
