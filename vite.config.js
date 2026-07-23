@@ -2,11 +2,11 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
- 
+
   base: '/my-website-2/',
 
   build: {
-    outDir: 'docs', 
+    outDir: 'docs', // 出力先フォルダ
     rollupOptions: {
       input: {
         main: resolve(import.meta.dirname, 'index.html'),
@@ -16,6 +16,6 @@ export default defineConfig({
   },
 
   server: {
-    open: '/app.html', 
+    open: '/app.html',
   },
 });
