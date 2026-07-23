@@ -5,25 +5,21 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  background-color: #fcf6f7; 
-  color: #8c7b7e;
-  min-height: 100vh;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", sans-serif;
+  background-color: #fff8f9;
+  color: #7d6b6e;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 24px 48px;
-  background-color: #fffafb;
-}
-
-.header-logo, .header-nav {
-  color: #e593a2;
+  padding: 20px 40px;
   font-size: 14px;
+  color: #e092a1;
   letter-spacing: 2px;
 }
 
@@ -31,7 +27,7 @@ body {
 .container {
   display: flex;
   flex: 1;
-  max-width: 1200px;
+  max-width: 1100px;
   width: 100%;
   margin: 0 auto;
   background-color: #ffffff;
@@ -39,31 +35,28 @@ body {
 
 
 .sidebar {
-  width: 32%;
-  background-color: #fcf0f2; 
+  width: 35%;
+  background-color: #fdf0f2;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 40px;
-}
-
-.sidebar-inner {
   text-align: center;
 }
 
 .side-title {
   font-size: 26px;
-  font-weight: 300;
-  color: #e593a2;
+  font-weight: normal;
+  color: #e092a1;
   letter-spacing: 4px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .side-line {
-  width: 36px;
+  width: 40px;
   height: 1px;
   background-color: #f3c3cc;
-  margin: 0 auto 28px auto;
+  margin: 0 auto 30px auto;
 }
 
 .side-text {
@@ -75,61 +68,57 @@ body {
 
 
 .main-content {
-  width: 68%;
-  padding: 48px 60px;
-  background-color: #ffffff;
+  width: 65%;
+  padding: 40px 50px;
 }
 
 
 .controls {
   display: flex;
-  gap: 16px;
-  margin-bottom: 24px;
+  gap: 15px;
+  margin-bottom: 25px;
 }
 
-.control {
+.controls .control {
   background-color: #ffffff;
-  border: 1px solid #f8d5dc;
-  color: #e593a2;
-  padding: 8px 36px;
+  border: 1px solid #f3c3cc;
+  color: #e092a1;
+  padding: 8px 30px;
   border-radius: 20px;
   font-size: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
   letter-spacing: 1px;
-  outline: none;
 }
 
 
-.control.mixitup-control-active {
-  background-color: #f8d5dc;
+.controls .control.mixitup-control-active {
+  background-color: #f3c3cc;
   color: #ffffff;
-  border-color: #f8d5dc;
 }
 
 .divider-line {
   height: 1px;
-  background-color: #fce8eb;
-  margin-bottom: 8px;
+  background-color: #fae6ea;
+  margin-bottom: 20px;
 }
 
 
 .menu-item {
   display: flex;
   align-items: center;
-  padding: 20px 0;
-  border-bottom: 1px dashed #fce8eb;
+  padding: 16px 0;
+  border-bottom: 1px dashed #fae6ea;
 }
 
+
 .item-circle {
-  width: 54px;
-  height: 54px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  background-color: #fde8ec; 
-  margin-right: 28px;
+  background-color: #fde8ec;
+  margin-right: 25px;
   flex-shrink: 0;
-  background-size: cover;
-  background-position: center;
 }
 
 .item-details {
@@ -138,31 +127,28 @@ body {
 
 .item-title {
   font-size: 15px;
-  font-weight: 400;
-  color: #55484a;
+  font-weight: normal;
+  color: #665558;
   letter-spacing: 2px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .item-desc {
   font-size: 11px;
   color: #a09093;
-  letter-spacing: 0.5px;
 }
 
 .item-price {
-  font-size: 14px;
-  color: #e593a2;
-  letter-spacing: 1.5px;
-  font-weight: 300;
+  font-size: 13px;
+  color: #e092a1;
+  letter-spacing: 1px;
 }
 
 
 .footer {
   text-align: center;
-  padding: 20px;
-  background-color: #fcf6f7;
-  color: #e593a2;
+  padding: 25px;
   font-size: 12px;
-  letter-spacing: 1.5px;
+  color: #e092a1;
+  letter-spacing: 1px;
 }
