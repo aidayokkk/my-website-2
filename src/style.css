@@ -6,14 +6,14 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  background-color: #fcf6f7; /* 薄い背景ピンク */
+  background-color: #fcf6f7; 
   color: #8c7b7e;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* ヘッダー */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -27,7 +27,7 @@ body {
   letter-spacing: 2px;
 }
 
-/* 全体コンテナ */
+
 .container {
   display: flex;
   flex: 1;
@@ -37,10 +37,10 @@ body {
   background-color: #ffffff;
 }
 
-/* 左サイドバー */
+
 .sidebar {
   width: 32%;
-  background-color: #fcf0f2; /* 画像と同じニュアンスの薄ピンク */
+  background-color: #fcf0f2; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,14 +73,14 @@ body {
   letter-spacing: 1px;
 }
 
-/* 右メインコンテンツ */
+
 .main-content {
   width: 68%;
   padding: 48px 60px;
   background-color: #ffffff;
 }
 
-/* フィルターボタン（food / drink） */
+
 .controls {
   display: flex;
   gap: 16px;
@@ -100,7 +100,7 @@ body {
   outline: none;
 }
 
-/* 選択されているボタンのデザイン */
+
 .control.mixitup-control-active {
   background-color: #f8d5dc;
   color: #ffffff;
@@ -113,7 +113,7 @@ body {
   margin-bottom: 8px;
 }
 
-/* メニューアイテムリスト */
+
 .menu-item {
   display: flex;
   align-items: center;
@@ -125,7 +125,7 @@ body {
   width: 54px;
   height: 54px;
   border-radius: 50%;
-  background-color: #fde8ec; /* ピンク丸アイコン */
+  background-color: #fde8ec; 
   margin-right: 28px;
   flex-shrink: 0;
   background-size: cover;
@@ -157,7 +157,7 @@ body {
   font-weight: 300;
 }
 
-/* フッター */
+
 .footer {
   text-align: center;
   padding: 20px;
