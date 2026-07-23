@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,26 +5,30 @@
 }
 
 body {
-  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", sans-serif;
-  background-color: #fff8f9; 
-  color: #7d6b6e; 
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #fcf6f7; /* 薄い背景ピンク */
+  color: #8c7b7e;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
-
+/* ヘッダー */
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 24px 48px;
+  background-color: #fffafb;
+}
+
+.header-logo, .header-nav {
+  color: #e593a2;
   font-size: 14px;
-  color: #e092a1;
   letter-spacing: 2px;
 }
 
-
-.main-container {
+/* 全体コンテナ */
+.container {
   display: flex;
   flex: 1;
   max-width: 1200px;
@@ -34,126 +37,132 @@ body {
   background-color: #ffffff;
 }
 
-
+/* 左サイドバー */
 .sidebar {
-  width: 35%;
-  background-color: #fdf0f2;
+  width: 32%;
+  background-color: #fcf0f2; /* 画像と同じニュアンスの薄ピンク */
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 40px;
+}
+
+.sidebar-inner {
   text-align: center;
 }
 
-.title {
-  font-size: 28px;
-  font-weight: normal;
-  color: #e092a1;
+.side-title {
+  font-size: 26px;
+  font-weight: 300;
+  color: #e593a2;
   letter-spacing: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
-.divider {
-  width: 40px;
+.side-line {
+  width: 36px;
   height: 1px;
   background-color: #f3c3cc;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 28px auto;
 }
 
-.description {
+.side-text {
   font-size: 13px;
   line-height: 2.2;
   color: #8c7b7e;
   letter-spacing: 1px;
 }
 
-
-.menu-section {
-  width: 65%;
-  padding: 40px 60px;
-}
-
-
-.filter-buttons {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 25px;
-}
-
-.filter-buttons button {
+/* 右メインコンテンツ */
+.main-content {
+  width: 68%;
+  padding: 48px 60px;
   background-color: #ffffff;
-  border: 1px solid #f3c3cc;
-  color: #e092a1;
-  padding: 8px 30px;
+}
+
+/* フィルターボタン（food / drink） */
+.controls {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.control {
+  background-color: #ffffff;
+  border: 1px solid #f8d5dc;
+  color: #e593a2;
+  padding: 8px 36px;
   border-radius: 20px;
   font-size: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
   letter-spacing: 1px;
+  outline: none;
 }
 
-
-.filter-buttons button.mixitup-control-active {
-  background-color: #f3c3cc;
+/* 選択されているボタンのデザイン */
+.control.mixitup-control-active {
+  background-color: #f8d5dc;
   color: #ffffff;
+  border-color: #f8d5dc;
 }
 
-.line {
+.divider-line {
   height: 1px;
-  background-color: #fae6ea;
-  margin-bottom: 20px;
+  background-color: #fce8eb;
+  margin-bottom: 8px;
 }
 
-
+/* メニューアイテムリスト */
 .menu-item {
   display: flex;
   align-items: center;
-  padding: 18px 0;
-  border-bottom: 1px dashed #fae6ea;
+  padding: 20px 0;
+  border-bottom: 1px dashed #fce8eb;
 }
 
-
-.img-circle {
-  width: 60px;
-  height: 60px;
+.item-circle {
+  width: 54px;
+  height: 54px;
   border-radius: 50%;
-  background-color: #fde8ec; 
+  background-color: #fde8ec; /* ピンク丸アイコン */
+  margin-right: 28px;
+  flex-shrink: 0;
   background-size: cover;
   background-position: center;
-  margin-right: 25px;
-  flex-shrink: 0;
 }
 
-
-.item-info {
+.item-details {
   flex: 1;
 }
 
-.item-name {
+.item-title {
   font-size: 15px;
-  font-weight: normal;
-  color: #665558;
+  font-weight: 400;
+  color: #55484a;
   letter-spacing: 2px;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .item-desc {
   font-size: 11px;
   color: #a09093;
+  letter-spacing: 0.5px;
 }
 
 .item-price {
-  font-size: 13px;
-  color: #e092a1;
-  letter-spacing: 1px;
+  font-size: 14px;
+  color: #e593a2;
+  letter-spacing: 1.5px;
   font-weight: 300;
 }
 
 /* フッター */
 .footer {
   text-align: center;
-  padding: 25px;
+  padding: 20px;
+  background-color: #fcf6f7;
+  color: #e593a2;
   font-size: 12px;
-  color: #e092a1;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
